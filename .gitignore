@@ -1,0 +1,9 @@
+
+niof_model_rsim_rtw/*
+slprj/*
+src/dev/*
+*.DS_Store
+*.original
+*.slxc
+niof_model
+niof_model.mat
