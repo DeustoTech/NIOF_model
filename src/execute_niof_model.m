@@ -1,4 +1,7 @@
 %%
+% Para compilar el modelos 
+% ejecutar compiler_niof_model.m
+%%
 clear;
 % Cargamos las variables:
 % - NIOF_parameters_simulink_Structure
@@ -16,7 +19,9 @@ update_params;
 save('auxiliar_files/NIOF_parameters_simulink_Structure.mat','NIOF_parameters_simulink_Structure','calendar','parameters')
 
 %%
-system("./niof_model -tf 5 -p auxiliar_files/NIOF_parameters_simulink_Structure.mat")
+%system("./niof_model -tf 5 -p auxiliar_files/NIOF_parameters_simulink_Structure.mat")
+system("niof_model -tf 5 -p auxiliar_files/NIOF_parameters_simulink_Structure.mat")
+
 %%
 load('niof_model.mat')
 %%
